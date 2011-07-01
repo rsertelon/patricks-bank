@@ -1,0 +1,359 @@
+#top {
+	width: 780px;
+	height: 110px;
+	margin: 0 auto 70px auto;
+	background: url('../images/logoPatrickBankSmall.png') no-repeat left top;
+}
+
+#top_bonjour {
+	border: 1px solid #096b09;
+	margin-top: 20px;
+	float: right;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: white;
+	height: 70px;
+	padding: 10px 20px 10px 20px;
+	min-width: 200px;
+	font-family: Verdana;
+}
+
+#top_bonjour a {
+	background: url('../images/greenDotSmall.png') no-repeat scroll left
+		center;
+	padding-left: 10px;
+	font-size: 0.80em;
+}
+
+#top_bonjour a:visited {
+	color: blue;
+}
+
+#top_bonjour p {
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+#corps_clover {
+	width: 900px;
+	margin: auto;
+	padding: 0px 5px 40px 5px;
+	background: url('../images/irlandais.png') no-repeat right bottom;
+}
+
+#corps {
+	width: 780px;
+	margin: auto;
+	background: white;
+	border: 1px solid #096b09;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 10px 5px 5px 5px;
+	min-height: 400px;
+}
+
+h1 {
+	background: url('../images/greenDot.png') no-repeat scroll left center;
+	padding-left: 30px;
+	margin: 5px auto 10px auto;
+	padding-bottom: 10px;
+	padding-top: 8px;
+	width: 700px;
+	font-size: 1.2em;
+	font-family: Verdana;
+	color: #023b02;
+	border-bottom: 1px solid #023b02;
+}
+
+.confirmation {
+	width: 600px;
+	background: #DDDDDD;
+	margin: auto;
+	border: 1px solid #096b09;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 10px 5px 5px 5px;
+}
+
+#comptes {
+	list-style: none;
+	width: 700px;
+	margin: 40px auto 0 auto;
+	font-family: Verdana;
+}
+
+#comptes li {
+	border: 1px solid grey;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin: 6px 4px 6px 4px;
+	height: 25px;
+	background: #F8F8F8;
+	padding: 8px;
+	padding-bottom: 1px;
+}
+
+#comptes li a,#comptes li a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+#operation {
+	list-style: none;
+	width: 700px;
+	margin: 20px auto 0 auto;
+	font-family: Verdana;
+	border: 1px solid green;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.case1 {
+	background: #E0F8E0;
+	font-size: 0.9em;
+}
+
+.case2 {
+	font-size: 0.9em;
+	background: #E0ECF8;
+}
+
+#operation tr {
+	height: 15px;
+	padding: 8px;
+	padding-bottom: 5px;
+}
+
+#operation td {
+	padding: 2px 5px 2px 5px;
+}
+
+#comptes li:hover {
+	border-color: black;
+	background: #F0F0F0;
+}
+
+.account_number {
+	font-size: 0.85em;
+}
+
+.solde {
+	font-family: Verdana;
+	text-align: right;
+}
+
+.soldeListCompte {
+	font-family: Verdana;
+	float: right;
+}
+
+.red {
+	color: red;
+}
+
+#messageErreurVirementNbCompte {
+	text-align: center;
+	margin: 50px auto;
+}
+
+.total {
+	text-align: left;
+	/* 	background-color: #F6CECE; */
+}
+
+.lblTotal { /* 	background-color: #F6CECE; */
+	text-align: right;
+}
+
+#back_link {
+	width: 700px;
+	text-align: right;
+	margin: 7px auto;
+	display: block;
+}
+
+a:visited {
+	color: blue;
+}
+
+#choixMois {
+	margin: 20px 0px 0px 40px;
+}
+
+.filter {
+	font-family: Verdana;
+}
+
+.thDate {
+	width: 100px;
+}
+
+.thType {
+	width: 160px;
+}
+
+.thDetail {
+	width: 240px;
+}
+
+.thCreditDebit {
+	width: 100px;
+}
+
+.formatCase {
+	font-size: 0.9em;
+}
+
+.info {
+	font-size: 0.8em;
+	color: #575656;
+}
+
+#menu {
+	width: 780px;
+	height: 31px;
+	margin: 0px auto 0px auto;
+}
+
+#drapeaux {
+	width: 60px;
+	height: 20px;
+	margin-top: 11px;
+	text-align: right;
+	padding-right: 15px;
+	float: right;
+}
+
+#navBarre {
+	text-align: center;
+	float: left;
+	margin-left: 20px;
+}
+
+#navBarre ul li {
+	list-style-type: none;
+	float: left;
+	border-top: 1px solid #096b09;
+	border-left: 1px solid #096b09;
+	border-right: 1px solid #096b09;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	background: #D0D0D0;
+}
+
+#navBarre ul li a {
+	display: block;
+	width: 130px;
+	font-style: Verdana;
+	font-size: 1.1em;
+	color: #003300;
+	text-decoration: none;
+	line-height: 30px;
+}
+
+#navBarre ul li.here {
+	height: 31px;
+	background: white;
+}
+
+/**********/
+#confirmationVirement {
+	width: 680px;
+	padding: 20px;
+	margin: 70px auto 5px auto;
+	overflow: auto;
+	background-color: #d5e6d5;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#confirmationVirement label {
+	float: left;
+	height: 26px;
+	width: 200px;
+	margin-top: 4px;
+	clear: left;
+}
+
+#confirmationVirement label.error {
+	float: right;
+	clear: none;
+	width: 230px;
+	margin-top: 8px;
+	font-size: 0.85em;
+}
+
+#confirmationVirement p.error {
+	float: right;
+	clear: none;
+	width: 230px;
+	margin-top: 8px;
+	font-size: 0.85em;
+	text-align: center;
+}
+
+#confirmationVirement select {
+	width: 350px;
+	float: right;
+	height: 26px;
+	margin-top: 4px;
+	clear: right;
+}
+
+#confirmationVirement input {
+	margin-left: 4px;
+	margin-top: 6px;
+	width: 100px;
+	float: left;
+	margin-left: 130px;
+}
+
+/* #confirmationVirement span { */
+/* 	margin: 0px 0px 0px 225px; */
+/* 	position: relative; */
+/* 	left: 243px; */
+/* 	top: 67px; */
+/* } */
+#confirmationVirement input[type=submit] {
+	margin-top: 15px;
+	margin-right: 270px;
+	float: right;
+}
+
+#confirmationVirement p.red {
+	float: left;
+	margin-top: 8px;
+	font-size: 0.9em;
+}
+
+.confirmation {
+	margin: 30px auto 0px auto;
+}
+
+#confirmer {
+	float: left;
+	margin: 30px 20px 0px 275px;
+}
+
+#annuler {
+	margin-top: 30px;
+}
+
+#messageConfirmation {
+	text-align: center;
+	margin: 50px auto;
+	color:green;
+}
+
+#messageErrorValidationServer {
+	text-align: center;
+	margin: 50px auto;
+}

@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: white url('../images/fond.png') repeat-x;
+}
+
+#bottom {
+	display: block;
+	margin: auto;
+	height: 64px;
+	width: 120px;
+	background: url('../images/logoExcilys.png') no-repeat center bottom;
+}
+
+a img {
+	border: none;
+}

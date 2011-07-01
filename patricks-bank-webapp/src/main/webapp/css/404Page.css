@@ -1,0 +1,17 @@
+#err404 {
+	padding-left: 100px;
+	padding-top: 30px;
+	font-size: 1.2em;
+}
+
+#err404 a {
+	background: url('../images/greenDotSmall.png') no-repeat scroll left
+		center;
+	padding-left: 10px;
+	margin-top: 20px;
+	display: block;
+}
+
+#err404 a:visited {
+	color:blue;
+}

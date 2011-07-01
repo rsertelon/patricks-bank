@@ -1,0 +1,3 @@
+<Context path="/patricks-bank" docBase="webapps/patricks-bank-webapp.war" debug="0" privileged="true">
+	<Manager className="org.apache.catalina.session.PersistentManager" debug="0" distributable="false" saveOnRestart="false" />
+</Context>

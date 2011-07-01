@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="baseLayout" template="/WEB-INF/tiles/baseLayout.jsp">
+		<put-attribute name="title" value="Template" />
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/tiles/body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+
+	<definition name="loginLayout" template="/WEB-INF/tiles/loginLayout.jsp">
+		<put-attribute name="title" value="Template" />
+		<put-attribute name="header" value="/WEB-INF/tiles/header_login.jsp" />
+		<put-attribute name="body" value="/WEB-INF/tiles/body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+
+	<definition name="admin" extends="baseLayout">
+		<put-attribute name="title" value="admin.title" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin.jsp" />
+	</definition>
+
+	<definition name="login" extends="loginLayout">
+		<put-attribute name="title" value="login.title" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+	</definition>
+
+	<definition name="accueil" extends="baseLayout">
+		<put-attribute name="title" value="home.title" />
+		<put-attribute name="body" value="/WEB-INF/jsp/accueil.jsp" />
+	</definition>
+
+	<definition name="detail" extends="baseLayout">
+		<put-attribute name="title" value="detail.title" />
+		<put-attribute name="body" value="/WEB-INF/jsp/detailCompte.jsp" />
+	</definition>
+	<definition name="virement" extends="baseLayout">
+		<put-attribute name="title" value="transfer.title" />
+		<put-attribute name="body" value="/WEB-INF/jsp/virement.jsp" />
+	</definition>
+	<definition name="confirmation" extends="baseLayout">
+		<put-attribute name="title" value="confirmation.title" />
+		<put-attribute name="body" value="/WEB-INF/jsp/confirmation.jsp" />
+	</definition>
+	
+</tiles-definitions>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project name="PatricksBankRest" resourceRoot="" soapui-version="3.6.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+	<con:settings/>
+	<con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="getComptesParUtilisateur" type="rest" basePath="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<con:settings/>
+		<con:definitionCache type="TEXT" rootPart=""/>
+		<con:endpoints>
+			<con:endpoint>http://localhost:8080</con:endpoint>
+		</con:endpoints>
+		<con:resource name="{param0}" path="/patricks-bank-webservice-rest/patricksbankservice/comptesparutilisateur/{idClient}">
+			<con:settings/>
+			<con:parameters>
+				<con:parameter>
+					<con:name>idClient</con:name>
+					<con:value>2</con:value>
+					<con:style>TEMPLATE</con:style>
+					<con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:string</con:type>
+					<con:default>2</con:default>
+					<con:description xsi:nil="true"/>
+				</con:parameter>
+			</con:parameters>
+			<con:method name="getComptes" method="GET">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/xml</con:mediaType>
+					<con:status>200</con:status>
+					<con:params/>
+					<con:element>comptes</con:element>
+				</con:representation>
+				<con:request name="Utilisateur_2" mediaType="application/xml">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request/>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+			</con:method>
+		</con:resource>
+	</con:interface>
+	<con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="passerVirement" type="rest" basePath="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<con:settings/>
+		<con:definitionCache/>
+		<con:endpoints>
+			<con:endpoint>http://localhost:8080</con:endpoint>
+		</con:endpoints>
+		<con:resource name="{param2}" path="/patricks-bank-webservice-rest/patricksbankservice/virement/of/{param0}/from/{param1}/to/{param2}">
+			<con:settings/>
+			<con:parameters>
+				<con:parameter>
+					<con:name>param0</con:name>
+					<con:value>50</con:value>
+					<con:style>TEMPLATE</con:style>
+					<con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:string</con:type>
+					<con:default>50</con:default>
+					<con:description xsi:nil="true"/>
+				</con:parameter>
+				<con:parameter>
+					<con:name>param1</con:name>
+					<con:value>1</con:value>
+					<con:style>TEMPLATE</con:style>
+					<con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:string</con:type>
+					<con:default>1</con:default>
+					<con:description xsi:nil="true"/>
+				</con:parameter>
+				<con:parameter>
+					<con:name>param2</con:name>
+					<con:value>2</con:value>
+					<con:style>TEMPLATE</con:style>
+					<con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:string</con:type>
+					<con:default>2</con:default>
+					<con:description xsi:nil="true"/>
+				</con:parameter>
+			</con:parameters>
+			<con:method name="Method 1" method="GET">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/xml</con:mediaType>
+					<con:status>200</con:status>
+					<con:params/>
+				</con:representation>
+				<con:request name="Request 1" mediaType="application/xml">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request/>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+			</con:method>
+		</con:resource>
+	</con:interface>
+	<con:testSuite name="getComptesParUtilisateur TestSuite"><con:description>TestSuite generated for REST Service [getComptesParUtilisateur]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="{param0} TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [{param0}] located at [/patricks-bank-webservice-rest/patricksbankservice/comptesparutilisateur/{idClient}]</con:description><con:settings/><con:testStep type="restrequest" name="Utilisateur_2"><con:settings/><con:config service="getComptesParUtilisateur" resourcePath="/patricks-bank-webservice-rest/patricksbankservice/comptesparutilisateur/{idClient}" methodName="getComptes" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Utilisateur_2" mediaType="application/xml">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request/>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite name="passerVirement TestSuite"><con:description>TestSuite generated for REST Service [passerVirement]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="{param2} TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [{param2}] located at [/patricks-bank-webservice-rest/patricksbankservice/virement/of/{param0}/from/{param1}/to/{param2}]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1"><con:settings/><con:config service="passerVirement" resourcePath="/patricks-bank-webservice-rest/patricksbankservice/virement/of/{param0}/from/{param1}/to/{param2}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" mediaType="application/xml">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request/>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/>
+	<con:wssContainer/>
+</con:soapui-project>

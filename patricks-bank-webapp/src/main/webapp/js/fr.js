@@ -1,0 +1,2 @@
+valeurMois = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
+errorMontant = "Montant invalide <span class=\"info\">(Exemple : 120,85)<span>";

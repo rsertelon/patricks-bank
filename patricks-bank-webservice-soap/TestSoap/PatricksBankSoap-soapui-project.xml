@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project name="PatricksBankSoap" resourceRoot="" soapui-version="3.6.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="PatricksBankImplServiceSoapBinding" type="wsdl" bindingName="{http://soap.webservice.patricksbank.excilys.com/}PatricksBankImplServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/patricks-bank-webservice-soap/PatricksBank?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/patricks-bank-webservice-soap/PatricksBank?wsdl"><con:part><con:url>http://localhost:8080/patricks-bank-webservice-soap/PatricksBank?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="PatricksBankImplService" targetNamespace="http://soap.webservice.patricksbank.excilys.com/" xmlns:ns1="http://contract.soap.webservice.patricksbank.excilys.com/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://soap.webservice.patricksbank.excilys.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:import location="http://localhost:8080/patricks-bank-webservice-soap/PatricksBank?wsdl=PatricksBank.wsdl" namespace="http://contract.soap.webservice.patricksbank.excilys.com/"></wsdl:import>
+  <wsdl:binding name="PatricksBankImplServiceSoapBinding" type="ns1:PatricksBank">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getComptes">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getComptes">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getComptesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="passerVirement">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="passerVirement">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="passerVirementResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PatricksBankImplService">
+    <wsdl:port binding="tns:PatricksBankImplServiceSoapBinding" name="PatricksBankImplPort">
+      <soap:address location="http://localhost:8080/patricks-bank-webservice-soap/PatricksBank"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:8080/patricks-bank-webservice-soap/PatricksBank?wsdl=PatricksBank.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="PatricksBank" targetNamespace="http://contract.soap.webservice.patricksbank.excilys.com/" xmlns:ns1="http://contract.soap.webservice.patricksbank.excilys.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://contract.soap.webservice.patricksbank.excilys.com/" version="1.0" xmlns:tns="http://contract.soap.webservice.patricksbank.excilys.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="getComptes" type="tns:getComptes"/>
+      <xs:element name="getComptesResponse" type="tns:getComptesResponse"/>
+      <xs:element name="passerVirement" type="tns:passerVirement"/>
+      <xs:element name="passerVirementResponse" type="tns:passerVirementResponse"/>
+      <xs:complexType name="getComptes">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getComptesResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:compteDTO"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="compteDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idCompte" type="xs:string"/>
+          <xs:element minOccurs="0" name="libelle" type="xs:string"/>
+          <xs:element name="montant" type="xs:double"/>
+          <xs:element minOccurs="0" name="numero" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="passerVirement">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+          <xs:element minOccurs="0" name="arg1" type="xs:string"/>
+          <xs:element name="arg2" type="xs:double"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="passerVirementResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:boolean"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="passerVirement">
+    <wsdl:part element="ns1:passerVirement" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getComptesResponse">
+    <wsdl:part element="ns1:getComptesResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getComptes">
+    <wsdl:part element="ns1:getComptes" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="passerVirementResponse">
+    <wsdl:part element="ns1:passerVirementResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="PatricksBank">
+    <wsdl:operation name="getComptes">
+      <wsdl:input message="ns1:getComptes" name="getComptes"></wsdl:input>
+      <wsdl:output message="ns1:getComptesResponse" name="getComptesResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="passerVirement">
+      <wsdl:input message="ns1:passerVirement" name="passerVirement"></wsdl:input>
+      <wsdl:output message="ns1:passerVirementResponse" name="passerVirementResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/patricks-bank-webservice-soap/PatricksBank</con:endpoint></con:endpoints><con:operation isOneWay="false" action="" name="getComptes" bindingOperationName="getComptes" type="Request-Response" outputName="getComptesResponse" inputName="getComptes" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/patricks-bank-webservice-soap/PatricksBank</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://contract.soap.webservice.patricksbank.excilys.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:getComptes>
+         <!--Optional:-->
+         <arg0>2</arg0>
+      </con:getComptes>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.webservice.patricksbank.excilys.com/PatricksBank/getComptes"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="" name="passerVirement" bindingOperationName="passerVirement" type="Request-Response" outputName="passerVirementResponse" inputName="passerVirement" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/patricks-bank-webservice-soap/PatricksBank</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://contract.soap.webservice.patricksbank.excilys.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:passerVirement>
+         <!--Optional:-->
+         <arg0>1</arg0>
+         <!--Optional:-->
+         <arg1>2</arg1>
+         <arg2>75</arg2>
+      </con:passerVirement>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.webservice.patricksbank.excilys.com/PatricksBank/passerVirement"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite name="PatricksBankImplServiceSoapBinding TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getComptes TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="getComptes"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PatricksBankImplServiceSoapBinding</con:interface><con:operation>getComptes</con:operation><con:request name="getComptes"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/patricks-bank-webservice-soap/PatricksBank</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://contract.soap.webservice.patricksbank.excilys.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:getComptes>
+         <!--Optional:-->
+         <arg0>?</arg0>
+      </con:getComptes>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://soap.webservice.patricksbank.excilys.com/PatricksBank/getComptes"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="passerVirement TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="passerVirement"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PatricksBankImplServiceSoapBinding</con:interface><con:operation>passerVirement</con:operation><con:request name="passerVirement"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/patricks-bank-webservice-soap/PatricksBank</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://contract.soap.webservice.patricksbank.excilys.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:passerVirement>
+         <!--Optional:-->
+         <arg0>?</arg0>
+         <!--Optional:-->
+         <arg1>?</arg1>
+         <arg2>?</arg2>
+      </con:passerVirement>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://soap.webservice.patricksbank.excilys.com/PatricksBank/passerVirement"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/></con:soapui-project>

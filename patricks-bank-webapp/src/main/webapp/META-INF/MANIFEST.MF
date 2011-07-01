@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Class-Path: activation-1.1.jar antlr-2.7.6.jar aopalliance-1.0.jar asp
+ ectjrt-1.6.8.jar aspectjweaver-1.6.8.jar commons-beanutils-1.8.0.jar 
+ commons-collections-3.1.jar commons-digester-2.0.jar commons-logging-
+ 99.0-does-not-exist.jar dom4j-1.6.1.jar flash-scope-1.0.0.jar hiberna
+ te-commons-annotations-3.2.0.Final.jar hibernate-core-3.6.2.Final.jar
+  hibernate-jpa-2.0-api-1.0.0.Final.jar hibernate-validator-4.0.2.GA.j
+ ar jackson-core-asl-1.7.5.jar jackson-mapper-asl-1.7.5.jar javassist-
+ 3.12.1.GA.jar jaxb-api-2.1.jar jaxb-impl-2.1.3.jar jcl-over-slf4j-1.6
+ .1.jar joda-time-1.6.2.jar jstl-1.1.2.jar jta-1.1.jar logback-classic
+ -0.9.28.jar logback-core-0.9.28.jar mysql-connector-java-5.1.14.jar p
+ atricks-bank-dao-api.jar patricks-bank-dao-impl.jar patricks-bank-mod
+ el.jar patricks-bank-service-api.jar patricks-bank-service-impl.jar p
+ ersistence-api-1.0.jar slf4j-api-1.6.1.jar spring-aop-3.0.5.RELEASE.j
+ ar spring-asm-3.0.5.RELEASE.jar spring-beans-3.0.5.RELEASE.jar spring
+ -context-3.0.5.RELEASE.jar spring-context-support-3.0.5.RELEASE.jar s
+ pring-core-3.0.5.RELEASE.jar spring-expression-3.0.5.RELEASE.jar spri
+ ng-jdbc-3.0.5.RELEASE.jar spring-orm-3.0.5.RELEASE.jar spring-securit
+ y-config-3.0.5.RELEASE.jar spring-security-core-3.0.5.RELEASE.jar spr
+ ing-security-web-3.0.5.RELEASE.jar spring-tx-3.0.5.RELEASE.jar spring
+ -web-3.0.5.RELEASE.jar spring-webmvc-3.0.5.RELEASE.jar standard-1.1.2
+ .jar stax-api-1.0-2.jar tiles-api-2.2.2.jar tiles-core-2.2.2.jar tile
+ s-jsp-2.2.2.jar tiles-servlet-2.2.2.jar tiles-template-2.2.2.jar tomc
+ at-jdbc-1.1.0.1.jar tomcat-slf4j-1.0.0.jar usertype.jodatime-1.8.jar 
+ usertype.spi-1.8.jar validation-api-1.0.0.GA.jar
+

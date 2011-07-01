@@ -1,0 +1,83 @@
+#top {
+	width: 900px;
+	height: 175px;
+	margin: 0px auto 60px auto;
+	background: url('../images/logoPatrickBank.png') no-repeat left top;
+}
+
+#drapeaux {
+	width: 400px;
+	height: 20px;
+	margin: auto;
+	padding: 0px;
+	text-align: right;
+	padding-right: 15px;
+}
+
+#corps_login_clover {
+	width: 520px;
+	margin: 0px auto;
+	padding: 0px 5px 40px 5px;
+	background: url('../images/irlandais.png') no-repeat right bottom;
+}
+
+#corps_login {
+	width: 400px;
+	margin: 0px auto 0 auto;
+	background: white;
+	border: 1px solid #096b09;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 10px 5px 5px 5px;
+}
+
+#form_login fieldset {
+	padding: 10px;
+	width: 356px;
+	margin: 0 auto;
+	border: none;
+}
+
+#form_login legend {
+	font-weight: bold;
+	color: #023b02
+}
+
+#form_login label {
+	display: block;
+	width: 150px;
+	height: 16px;
+	float: left;
+	clear: left;
+	margin-top: 2px;
+}
+
+#form_login input {
+	width: 200px;
+	float: left;
+	height: 16px;
+	margin-top: 2px;
+}
+
+#form_login input[type=submit] {
+	width: 100px;
+	float: right;
+	margin-top: 4px;
+	height: 25px;
+}
+
+.mandatory {
+	color: red;
+	font-size: 0.75em;
+}
+
+.errorMessage {
+	color: red;
+	float: left;
+	clear: left;
+	margin-top: 5px;
+	width: 220px;
+	font-size: 0.90em;
+	font-family: Verdana;
+}

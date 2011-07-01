@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Class-Path: activation-1.1.jar antlr-2.7.6.jar aopalliance-1.0.jar com
+ mons-collections-3.1.jar commons-logging-99.0-does-not-exist.jar cxf-
+ api-2.3.3.jar cxf-common-schemas-2.3.3.jar cxf-common-utilities-2.3.3
+ .jar cxf-rt-bindings-xml-2.3.3.jar cxf-rt-core-2.3.3.jar cxf-rt-front
+ end-jaxrs-2.3.3.jar cxf-rt-transports-common-2.3.3.jar cxf-rt-transpo
+ rts-http-2.3.3.jar dom4j-1.6.1.jar geronimo-javamail_1.4_spec-1.7.1.j
+ ar hibernate-commons-annotations-3.2.0.Final.jar hibernate-core-3.6.2
+ .Final.jar hibernate-jpa-2.0-api-1.0.0.Final.jar hibernate-validator-
+ 4.0.2.GA.jar javassist-3.12.1.GA.jar jaxb-api-2.1.jar jaxb-impl-2.1.1
+ 3.jar jcl-over-slf4j-1.6.1.jar jettison-1.2.jar joda-time-1.6.2.jar j
+ sr311-api-1.1.1.jar jta-1.1.jar logback-classic-0.9.28.jar logback-co
+ re-0.9.28.jar mysql-connector-java-5.1.14.jar neethi-2.0.4.jar patric
+ ks-bank-dao-api.jar patricks-bank-dao-impl.jar patricks-bank-model.ja
+ r patricks-bank-service-api.jar patricks-bank-service-impl.jar persis
+ tence-api-1.0.jar slf4j-api-1.6.1.jar spring-aop-3.0.5.RELEASE.jar sp
+ ring-asm-3.0.5.RELEASE.jar spring-beans-3.0.5.RELEASE.jar spring-cont
+ ext-3.0.5.RELEASE.jar spring-core-3.0.5.RELEASE.jar spring-expression
+ -3.0.5.RELEASE.jar spring-jdbc-3.0.5.RELEASE.jar spring-orm-3.0.5.REL
+ EASE.jar spring-tx-3.0.5.RELEASE.jar spring-web-3.0.5.RELEASE.jar sta
+ x-api-1.0-2.jar stax2-api-3.0.2.jar tomcat-jdbc-1.1.0.1.jar tomcat-sl
+ f4j-1.0.0.jar usertype.jodatime-1.8.jar usertype.spi-1.8.jar validati
+ on-api-1.0.0.GA.jar woodstox-core-asl-4.0.8.jar wsdl4j-1.6.2.jar XmlS
+ chema-1.4.7.jar
+
