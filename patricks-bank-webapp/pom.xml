@@ -7,10 +7,8 @@
 		<groupId>com.excilys.patricksbank</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.excilys.patricksbank</groupId>
 	<artifactId>patricks-bank-webapp</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
 
 	<name>patricks-bank-webapp JEE5 Webapp</name>
 	<url>http://maven.apache.org</url>

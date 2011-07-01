@@ -5,9 +5,7 @@
     <groupId>com.excilys.patricksbank</groupId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.excilys.patricksbank</groupId>
   <artifactId>patricks-bank-service-api</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <dependencies>
     <dependency>
       <groupId>com.excilys.patricksbank</groupId>

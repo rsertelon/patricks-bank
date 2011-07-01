@@ -40,6 +40,13 @@
 		<hibernate-validator.version>4.0.2.GA</hibernate-validator.version>
 		<mockito.version>1.8.5</mockito.version>
 	</properties>
+	
+	<repositories>
+		<repository>
+			<id>excilys-thirdparty</id>
+			<url>http://repository.excilys.com/content/repositories/thirdparty/</url>
+		</repository>
+	</repositories>
 
 	<pluginRepositories>
 		<pluginRepository>
